@@ -128,11 +128,11 @@ def modinv(a, m):
 
 
 def generate_RSA(e, bits=2048):
-    '''
+    """
     Generate an RSA keypair with an exponent of 65537 in PEM format
     param: bits The key length in bits
     Return private key and public key
-    '''
+    """
     from Crypto.PublicKey import RSA
     key = RSA.generate(bits, None, None, e)
     private_key = key.exportKey('PEM')
