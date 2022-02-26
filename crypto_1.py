@@ -1037,7 +1037,7 @@ def obfuscation():
 
     >>> g = zlib.compress
     >>> h = base64.b85encode
-    >>> public_key = h(h(g(g(h(g(h(h(original))))))))  # ENCODAGE (original doit etre Bytes)
+    >>> public_key = h(h(g(g(h(g(h(h(original))))))))  # ENCODE (original must be bytes)
 
     THEN
     
